@@ -10,7 +10,7 @@
 /** Nav Bar Styles **/
 
 body,nav,main,#aboutUs,#whyChooseUs,#ourServices,#CTA,#contactUs{
-    width: 100vw;
+    max-width: 100vw;
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
     top: 0;
     z-index: 100;
     width: 100vw;
-
+    left: 0;
 }
 
 .logo {
@@ -56,8 +56,8 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    max-width: 90%;
-    min-width: 60%;
+    margin-right: 20px;
+    margin-left: auto;
 }
 
 .link {
