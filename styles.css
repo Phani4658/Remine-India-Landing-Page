@@ -7,12 +7,19 @@
     font-family: "Poppins";
 }
 
+/** Nav Bar Styles **/
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em;
     background-color: #FDFFFC;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width: 100%;
+
 }
 
 .logo{
@@ -28,11 +35,12 @@ nav{
 
 a{
     text-decoration: none !important;
-    color:black  !important;
+    color:black ;
 }
 
 .logo-text{
     font-size: 16px;
+    color:#000;
 }
 
 ul{
@@ -46,9 +54,13 @@ ul{
     gap:20px;
 }
 
+.link{
+    color:black;
+}
 
+/** Hero Section **/
 .hero-section{
-    height: calc(100vh - calc(1em + 50px));
+    height: calc(100vh - calc(1em+50px));
     background-image: url('./Assets/Hero-Section.jpg');
     background-size: cover;
     position: relative;
@@ -83,6 +95,8 @@ ul{
     color:white !important;
 }
 
+/** About Us Section **/
+
 .about-us-section{
     padding: 20px;
 }
@@ -99,9 +113,65 @@ h1{
     font-weight: 700;
 }
 
-.link:hover{
+a:hover{
     color:#4EDDDB;
 }
+
+/** Why Choose Us Section **/
+
+.why-choose-us-section{
+    background-color: #201521;
+    padding: 1em;
+}
+
+.WCU-Section-Heading{
+    font-weight: 700;
+    color:#fff;
+}
+
+.wcu-section-card{
+    background-color: #AD4057;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+.card-image{
+    width: 100%;
+    height: 240px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-image:hover{
+    width: 100%;
+}
+
+.card-content{
+    padding: 20px;
+    color:white;
+}
+
+h1{
+    font-weight: bolder;
+}
+
+.bold{
+    color:#4C8E8D;
+    font-weight: 600;
+}
+
+/** Services Section **/
+
+.services-section{
+    padding: 20px;
+}
+
+
+/** Mobile Specific Styling **/
 @media screen and (max-width:767px){
     .nav-links,.hide-in-mobile{
         display: none;
@@ -120,8 +190,13 @@ h1{
         width: 98%;
         margin: auto;
     }
+    .wcu-section-card{
+        width: 85%;
+        margin:15px auto;
+    }
 }
 
+/** Laptop & Tablet Specific Styling **/
 @media screen and (min-width:768px){
     .hide-in-laptop{
         display: none;
@@ -131,13 +206,19 @@ h1{
         justify-content: center;
         align-items: center;
     }
+    .wcu-section-card{
+        width: 45%;
+        min-height: 500px;
+    }
+    .wcu-section-cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
-
-h1{
-    font-weight: bolder;
-}
-
-.bold{
-    color:#4C8E8D;
-    font-weight: 600;
+@media screen and (min-width:979px){
+    .wcu-section-card{
+        width: 30%;
+    }
 }
