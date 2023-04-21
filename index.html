@@ -8,22 +8,23 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/e27bd23adb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <nav>
-        <a class="logo-container" href="/">
+        <a class="logo-container" data-aos="fade-right" href="/">
             <img src="./Assets/Logo.ico" alt="remine-logo" class="logo" />
             <h1 class="logo-text">Remine</h1>
         </a>
         <ul class="nav-links">
-            <li class="link"><a href="#aboutUs">About us</a></li>
-            <li class="link"><a href="#whyChooseUs">Why choose us</a></li>
-            <li class="link"><a href="#ourServices">Our services</a></li>
-            <li class="link"><a href="#CTA">Call To Action</a></li>
-            <li class="link"><a href="#contactUs">Contact Us</a></li>
+            <li class="link" data-aos="fade-left"><a href="#aboutUs">About us</a></li>
+            <li class="link" data-aos="fade-left"><a href="#whyChooseUs">Why choose us</a></li>
+            <li class="link" data-aos="fade-left"><a href="#ourServices">Our services</a></li>
+            <li class="link" data-aos="fade-left"><a href="#CTA">Call To Action</a></li>
+            <li class="link" data-aos="fade-left"><a href="#contactUs">Contact Us</a></li>
         </ul>
-        <div class="dropdown hide-in-laptop">
+        <div class="dropdown hide-in-laptop"data-aos="fade-left">
             <button class="btn btn-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bars fa-lg"></i>
             </button>
@@ -38,20 +39,20 @@
     </nav>
     <main class="hero-section">
         <div class="hero-section-content">
-            <h1 class="title">Welcome to<br /> REMINE INDIA</h1>
-            <h3 class="tagline">Recycling for a Sustainable Future</h3>
-            <div class="button-container">
+            <h1 class="title" data-aos="fade-up">Welcome to<br /> REMINE INDIA</h1>
+            <h3 class="tagline" data-aos="fade-up" data-aos-delay="250">Recycling for a Sustainable Future</h3>
+            <div class="button-container" data-aos="fade-up" data-aos-delay="500">
                 <button class="btn btn-primary"><a href="#aboutUs" class="button-link">Learn More</a></button>
                 <button class="btn btn-secondary"><a href="#aboutus" class="button-link">Contact us</a></button>
             </div>
         </div>
     </main>
-    <section id="aboutUs" class="about-us-section">
-        <h1 class="hide-in-laptop about-us-heading">About us</h1>
-        <img src="./Assets/Team work-bro.svg" class="about-us-image" />
+    <section id="aboutUs" class="about-us-section" data-aos="fade-up">
+        <h1 class="hide-in-laptop about-us-heading" data-aos="fade-up">About us</h1>
+        <img src="./Assets/Team work-bro.svg" class="about-us-image" data-aos="fade-up"/>
         <div>
-            <h1 class="hide-in-mobile about-us-heading">About Us</h1>
-            <p>
+            <h1 class="hide-in-mobile about-us-heading" data-aos="fade-up">About Us</h1>
+            <p data-aos="fade-up">
                 Welcome to <span class="bold">Remine India </span>, a recognized startup committed to sustainability
                 through responsible recycling
                 practices. We specialize in <span class="bold">recycling electronic waste (e-Waste) and Lithium (Li)
@@ -64,10 +65,10 @@
             </p>
         </div>
     </section>
-    <section id="whyChooseUs" class="why-choose-us-section">
+    <section id="whyChooseUs" class="why-choose-us-section" data-aos="fade-up">
         <h1 class="WCU-Section-Heading">Why Choose Us</h1>
         <div class="wcu-section-cards-container">
-            <div class="wcu-section-card">
+            <div class="wcu-section-card" data-aos="fade-up">
                 <img src="./Assets/wcu-1.jpg" class="card-image" />
                 <div class="card-content">
                     <h4 class="heading">Environmentally Responsible</h4>
@@ -78,7 +79,7 @@
                     </p>
                 </div>
             </div>
-            <div class="wcu-section-card">
+            <div class="wcu-section-card" data-aos="fade-up">
                 <img src="./Assets/wcu-2.webp" class="card-image" />
                 <div class="card-content">
                     <h4 class="heading">Innovation and Technology</h4>
@@ -88,7 +89,7 @@
                     </p>
                 </div>
             </div>
-            <div class="wcu-section-card">
+            <div class="wcu-section-card" data-aos="fade-up">
                 <img src="./Assets/wcu-3.jpg" class="card-image" />
                 <div class="card-content">
                     <h4 class="heading">Positive Impact</h4>
@@ -100,9 +101,9 @@
             </div>
         </div>
     </section>
-    <section class="services-section" id="ourServices">
+    <section class="services-section" id="ourServices" data-aos="fade-up">
         <h1 class="heading">Our Services</h1>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-right">
             <img src="./Assets/services-1.jpg" class="service-image" />
             <div class="service-card-content">
                 <h4 class="service-name">e-Waste Recycling</h4>
@@ -113,7 +114,7 @@
                 </p>
             </div>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-left">
             <img src="./Assets/services-2.jpg" class="service-image order-1" />
             <div class="service-card-content">
                 <h4 class="service-name">Li Battery Recycling</h4>
@@ -125,31 +126,36 @@
             </div>
         </div>
     </section>
-    <section class="cta-section" id="CTA">
-            <video id="background-video" autoplay loop muted>
-                <source src="./Assets/CTA-1.mp4" type="video/mp4" />
-            </video>
+    <section class="cta-section" id="CTA" data-aos="fade-up">
+        <video id="background-video" autoplay loop muted>
+            <source src="./Assets/CTA-1.mp4" type="video/mp4" />
+        </video>
         <div class="overlay"></div>
         <div class="cta-content">
-            <h3>Join us in the mission to create a cleaner, healthier planet by responsibly recycling e-Waste with Remine India.</h3>
+            <h3 data-aos="fade-up">Join us in the mission to create a cleaner, healthier planet by responsibly recycling e-Waste with
+                Remine India.</h3>
         </div>
     </section>
-    <section class="contact-section" id="contactUs">
-        <h2>Contact Us</h2>
-        <form class="contact-form" action="#" method="post">
-          <input type="text" id="name" name="name" placeholder="Your Name">
-          <input type="email" id="email" name="email" placeholder="Your Email">
-          <textarea id="message" name="message" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message">
+    <section class="contact-section" id="contactUs" data-aos="fade-up">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <form class="contact-form" action="#" method="post" >
+            <input type="text" id="name" name="name" placeholder="Your Name" data-aos="fade-up" data-aos-delay="100">
+            <input type="email" id="email" name="email" placeholder="Your Email" data-aos="fade-up" data-aos-delay="200">
+            <textarea id="message" name="message" placeholder="Your Message" data-aos="fade-up" data-aos-delay="300"></textarea>
+            <input type="submit" value="Send Message" data-aos="fade-up" data-aos-delay="400">
         </form>
     </section>
     <footer>
         <h6>CopyRights@Remine India</h6>
         <h6>Developed By @Phani</h6>
-    </footer>  
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({duration:500});
+    </script>
 </body>
 
 </html>
