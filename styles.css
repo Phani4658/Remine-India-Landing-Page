@@ -9,8 +9,12 @@
 
 /** Nav Bar Styles **/
 
-body,nav,main,#aboutUs,#whyChooseUs,#ourServices,#CTA,#contactUs{
-    max-width: 100vw;
+body{
+    width: 100vw;
+}
+
+main,#aboutUs,#whyChooseUs,#ourServices,#CTA,#contactUs{
+    width: 100%;
 }
 
 nav {
@@ -24,6 +28,7 @@ nav {
     z-index: 100;
     left: 0;
     width: 100%;
+    overflow-x: auto;
 }
 
 .logo {
