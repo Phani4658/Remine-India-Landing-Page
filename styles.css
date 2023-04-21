@@ -9,6 +9,10 @@
 
 /** Nav Bar Styles **/
 
+body,nav,main,#aboutUs,#whyChooseUs,#ourServices,#CTA,#contactUs{
+    width: 100vw;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,7 +22,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 100;
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -52,6 +56,8 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    max-width: 90%;
+    min-width: 60%;
 }
 
 .link {
@@ -61,6 +67,7 @@ ul {
 /** Hero Section **/
 .hero-section {
     height: calc(100vh - calc(1em+50px));
+    width: 100vw;
     background-image: url('./Assets/Hero-Section.jpg');
     background-size: cover;
     position: relative;
